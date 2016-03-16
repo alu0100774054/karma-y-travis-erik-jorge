@@ -51,5 +51,5 @@ Medida.convertir = function(valor) {
     }
   }
   else
-    return "Introduzca una temperatura valida: 330e-1 F to C";
+    return "Siga las instrucciones para poder convertir correctamente.";
 };
