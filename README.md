@@ -4,8 +4,6 @@
 ###Erik Andreas Barreto de Vera alu0100774054
 ###Jorge Alonso Hernandez alu0100767803
 ---
-## Práctica 4: Eliminación del code smelling.
-
 ### conversor
 
 * [Conversor de temperaturas]http://alu0100774054.github.io/CodeSmelling
