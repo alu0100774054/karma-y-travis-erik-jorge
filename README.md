@@ -15,7 +15,6 @@
 ### conversor
 
 * [Conversor de temperaturas]http://alu0100774054.github.io/CodeSmelling
->>>>>>> origin/gh-pages
 
 ### Campus virtual de la Asignatura
 
