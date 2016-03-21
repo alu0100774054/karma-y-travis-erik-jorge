@@ -20,13 +20,6 @@
 ### Campus virtual de la Asignatura
 
 * [Campus virtual Procesadores de Lenguajes]https://campusvirtual.ull.es/1516/course/view.php?id=178
-
-## Práctica 4: Code Smell
-
-### Que aprendemos
-
-### Code Smell
-
 ---
 
 ### Página de la Asignatura
