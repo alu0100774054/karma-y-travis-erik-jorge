@@ -40,4 +40,21 @@ describe("Clase Temperatura", function () {
       expect(temperatura.tipo).to.equal('c');
     });
   });
+  describe("Clase Fahrenheit", function () {
+  describe("constructor fahrenheit", function () {
+    it("deberia tener un constructor", function () {
+      var far = new Fahrenheit (320e-1);
+      expect(far.valor).to.equal(320e-1);
+    });
+  });
+  describe("funciones de fahrenheit", function () {
+    it("debe convertir a celsius", function () {
+      var far = new Fahrenheit (320e-1);
+      expect(far.toCelsius()).to.equal(0);
+    });
+    it("debe convertir a kelvin", function () {
+      var far = new Fahrenheit (320e-1);
+      expect(far.toKelvin()).to.equal(273.15);
+    });
+  });
 });
