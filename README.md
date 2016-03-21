@@ -17,6 +17,8 @@
 
 * [Conversor de temperaturas]http://alu0100774054.github.io/CodeSmelling
 
+* [Página de los tests]http://alu0100774054.github.io/CodeSmelling/temperatura_test
+
 ### Campus virtual de la Asignatura
 
 * [Campus virtual Procesadores de Lenguajes]https://campusvirtual.ull.es/1516/course/view.php?id=178
