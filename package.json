@@ -21,7 +21,9 @@
   },
   "homepage": "https://github.com/aluXXXXXXX/STW03",
   "devDependencies": {
-    "mocha": "latest",
-    "gulp": "~3.8.10"
+    "gulp": "~3.8.10",
+    "gulp-concat": "^2.6.0",
+    "gulp-util": "^3.0.7",
+    "mocha": "latest"
   }
 }
