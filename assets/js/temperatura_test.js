@@ -58,3 +58,22 @@ describe("Clase Temperatura", function () {
     });
   });
 });
+
+describe("Clase Celsius", function () {
+  describe("constructor celsius", function () {
+    it("deberia tener un constructor", function () {
+      var cel = new Celsius (32);
+      expect(cel.valor).to.equal(32);
+    });
+  });
+  describe("funciones de celsius", function () {
+    it("debe convertir a fahrenheit", function () {
+      var cel = new Celsius (0);
+      expect(cel.toFahrenheit()).to.equal(32);
+    });
+    it("debe convertir a kelvin", function () {
+      var cel = new Celsius (0);
+      expect(cel.toKelvin()).to.equal(273.15);
+    });
+  });
+});
