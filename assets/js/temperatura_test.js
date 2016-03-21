@@ -23,7 +23,7 @@ describe("Medida", function () {
   describe("funcion convertir", function () {
     it("deberia convertir correctamente", function() {
       var conv = Medida.convertir('1e-1 f to c');
-      expect(conv).to.equal('0.00 Celsius');
+      expect(conv).to.equal('-17.72 Celsius');
     });
   });
 });
@@ -41,10 +41,11 @@ describe("Clase Temperatura", function () {
     });
   });
   describe("Clase Fahrenheit", function () {
-  describe("constructor fahrenheit", function () {
-    it("deberia tener un constructor", function () {
-      var far = new Fahrenheit (10e-1);
-      expect(far.valor).to.equal(10e-1);
+    describe("constructor fahrenheit", function () {
+      it("deberia tener un constructor", function () {
+        var far = new Fahrenheit (10e-1);
+        expect(far.valor).to.equal(10e-1);
+      });
     });
   });
   describe("funciones de fahrenheit", function () {
@@ -54,7 +55,7 @@ describe("Clase Temperatura", function () {
     });
     it("debe convertir a kelvin", function () {
       var far = new Fahrenheit (5);
-      expect(far.toKelvin()).to.equal(258,15);
+      expect(far.toKelvin()).to.equal(258.15);
     });
   });
 });
@@ -74,6 +75,25 @@ describe("Clase Celsius", function () {
     it("debe convertir a kelvin", function () {
       var cel = new Celsius (0);
       expect(cel.toKelvin()).to.equal(273.15);
+    });
+  });
+});
+
+describe("Clase Kelvin", function () {
+  describe("constructor kelvin", function () {
+    it("deberia tener un constructor", function () {
+      var kel = new Kelvin (880e-1);
+      expect(kel.valor).to.equal(880e-1);
+    });
+  });
+  describe("funciones de kelvin", function () {
+    it("debe convertir a celsius", function () {
+      var kel = new Kelvin (880e-1);
+      expect(parseFloat(kel.toCelsius().toFixed(2))).to.equal(-185.15);
+    });
+    it("debe convertir a fahrenheit", function () {
+      var kel = new Kelvin (880e-1);
+      expect(parseFloat(kel.toFahrenheit().toFixed(2))).to.equal(-301.27);
     });
   });
 });
