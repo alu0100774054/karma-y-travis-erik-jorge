@@ -14,15 +14,15 @@ describe("Medida", function () {
   })
   describe("funcion match", function () {
     it("debería cazar bien", function () {
-      var valor = Medida.match('330e-1 f to c');
-      expect(parseFloat(valor.val)).to.equal(330e-1);
+      var valor = Medida.match('1e-1 f to c');
+      expect(parseFloat(valor.val)).to.equal(1e-1);
       expect(valor.tip).to.equal('f');
       expect(valor.para).to.equal('c');
     });
   });
   describe("funcion convertir", function () {
     it("deberia convertir correctamente", function() {
-      var conv = Medida.convertir('320e-1 f to c');
+      var conv = Medida.convertir('1e-1 f to c');
       expect(conv).to.equal('0.00 Celsius');
     });
   });
@@ -31,30 +31,30 @@ describe("Medida", function () {
 describe("Clase Temperatura", function () {
   describe("constructor temperatura", function() {
     it("deberia tener un constructor", function() {
-      var temperatura = new Temperatura (32, 'c');
-      expect(temperatura.valor).to.equal(32);
+      var temperatura = new Temperatura (10, 'c');
+      expect(temperatura.valor).to.equal(10);
     });
     it("deberia poder recibir un solo parametro", function() {
-      var temperatura = new Temperatura ('32 c');
-      expect(temperatura.valor).to.equal(32);
+      var temperatura = new Temperatura ('10 c');
+      expect(temperatura.valor).to.equal(10);
       expect(temperatura.tipo).to.equal('c');
     });
   });
   describe("Clase Fahrenheit", function () {
   describe("constructor fahrenheit", function () {
     it("deberia tener un constructor", function () {
-      var far = new Fahrenheit (320e-1);
-      expect(far.valor).to.equal(320e-1);
+      var far = new Fahrenheit (10e-1);
+      expect(far.valor).to.equal(10e-1);
     });
   });
   describe("funciones de fahrenheit", function () {
     it("debe convertir a celsius", function () {
-      var far = new Fahrenheit (320e-1);
+      var far = new Fahrenheit (32);
       expect(far.toCelsius()).to.equal(0);
     });
     it("debe convertir a kelvin", function () {
-      var far = new Fahrenheit (320e-1);
-      expect(far.toKelvin()).to.equal(273.15);
+      var far = new Fahrenheit (5);
+      expect(far.toKelvin()).to.equal(258,15);
     });
   });
 });
