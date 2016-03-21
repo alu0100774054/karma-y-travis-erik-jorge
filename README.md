@@ -1,17 +1,18 @@
 #Asignatura: Procesadores de Lenguajes
 ##Alumnos
 ---
-###Erik Andreas Barreto de Vera alu0100774054
 
+###Erik Andreas Barreto de Vera alu0100774054
 
 * [Pagina de usuario]http://alu0100774054.github.io/
 
 ###Jorge Alonso Hernandez alu0100767803
 
 * [Pagina de usuario]http://alu0100767803.github.io/
-=======
+
 ###Jorge Alonso Hernandez alu0100767803
 ---
+
 ### conversor
 
 * [Conversor de temperaturas]http://alu0100774054.github.io/CodeSmelling
@@ -25,7 +26,9 @@
 ### Que aprendemos
 
 ### Code Smell
-=======
+
+---
+
 ### Página de la Asignatura
 
 * [Erik Andreas Barreto de Vera]http://alu0100774054.github.io/
