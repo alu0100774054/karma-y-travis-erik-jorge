@@ -10,7 +10,7 @@
 
 * [Pagina de usuario]http://alu0100767803.github.io/
 
-###Jorge Alonso Hernandez alu0100767803
+
 ---
 
 ### conversor
