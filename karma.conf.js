@@ -15,8 +15,7 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      '*.html',
-      'assets/js/*.js'
+      'assets/js/temperatura_test.js'
     ],
 
     // list of files to exclude

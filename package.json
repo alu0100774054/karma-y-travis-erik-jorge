@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/aluXXXXXXX/STW03",
   "devDependencies": {
-    "chai": "*",
+    "chai": "~2.0.0",
     "mocha": "*",
     "del": "2.2.0",
     "gulp": "3.8.11",
