@@ -22,6 +22,7 @@
   "homepage": "https://github.com/aluXXXXXXX/STW03",
   "devDependencies": {
     "chai": "*",
+    "mocha": "*",
     "del": "2.2.0",
     "gulp": "3.8.11",
     "gulp-concat": "2.6.0",
@@ -34,7 +35,6 @@
     "karma-firefox-launcher": "*",
     "karma-html2js-preprocessor": "*",
     "karma-mocha": "*",
-    "karma-phantomjs-launcher": "^1.0.0",
-    "mocha": "*"
+    "karma-phantomjs-launcher": "^1.0.0"
   }
 }
