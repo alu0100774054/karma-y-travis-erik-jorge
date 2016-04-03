@@ -10,13 +10,27 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['mocha'],
+    frameworks: ['mocha', 'chai'],
 
 
     // list of files / patterns to load in the browser
     files: [
-      'assets/js/temperatura_test.js'
+      'assets/js/*.js',
+      'vendor/*',
+      'xregexp.js',
+      'temperatura_test.html'
     ],
+
+    plugins:[
+      'karma-mocha',
+      'karma-firefox-launcher',
+      'karma-chrome-launcher',
+      'karma-jasmine',
+      'karma-phantomjs-launcher',
+      'karma-sourcemap-loader',
+      'karma-chai',
+      'karma-html2js-preprocessor'
+      ],
 
     // list of files to exclude
     exclude: [
@@ -26,6 +40,7 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+      'temperatura_test.html': ['html2js']
     },
 
 
@@ -54,7 +69,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Safari', 'Chrome', 'Firefox'],
+    browsers: ['PhantomJS', 'Safari', 'Chrome', 'Firefox'],
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits

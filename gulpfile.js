@@ -6,17 +6,8 @@ var del     = require('del');
 var minifyHTML = require('gulp-minify-html');
 var minifyCSS  = require('gulp-minify-css');
 var Server = require('karma').Server;
-
-/**
- * Run test once and exit
- */
-gulp.task('test', function (done) {
-  new Server({
-    configFile: __dirname + '/karma.conf.js',
-    singleRun: true
-  }, done).start();
-});
-
+var ghPages = require('gulp-gh-pages');
+var karma   = require('gulp-karma');
 
 gulp.task('minify', function () {
   gulp.src('assets/js/*.js')
@@ -38,4 +29,30 @@ gulp.task('minify', function () {
 
 gulp.task('clean', function(cb) {
   del(['minified/*'], cb);
+});
+
+
+gulp.task('deploy', function() {
+    return gulp.src('./**/*')
+      .pipe(ghPages());
+  });
+
+
+  gulp.task('test', function() {
+  return gulp.src([])
+    .pipe(karma({
+      configFile: 'karma.conf.js',
+      action: 'run'
+    }))
+    .on('error', function(err) {
+      throw err;
+    });
+});
+
+gulp.task('default', function() {
+  gulp.src([])
+    .pipe(karma({
+      configFile: 'karma.conf.js',
+      action: 'watch'
+    }));
 });
