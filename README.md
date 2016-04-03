@@ -1,4 +1,7 @@
 #Asignatura: Procesadores de Lenguajes
+
+[![Build Status](https://travis-ci.org/alu0100774054/karma-y-travis-erik-jorge.svg?branch=master)](https://travis-ci.org/alu0100774054/karma-y-travis-erik-jorge)
+
 ##Alumnos
 ---
 
