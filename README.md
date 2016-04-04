@@ -18,9 +18,9 @@
 
 ### conversor
 
-* [Conversor de temperaturas]http://alu0100774054.github.io/CodeSmelling
+* [Conversor de temperaturas]http://alu0100774054.github.io/karma-y-travis-erik-jorge
 
-* [Página de los tests]http://alu0100774054.github.io/CodeSmelling/temperatura_test
+* [Página de los tests]http://alu0100774054.github.io/karma-y-travis-erik-jorge/temperatura_test
 
 ### Campus virtual de la Asignatura
 

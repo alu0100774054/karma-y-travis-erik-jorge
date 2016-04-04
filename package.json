@@ -4,7 +4,7 @@
   "description": "Conversor javascript de tipos",
   "main": "conversor.js",
   "scripts": {
-    "test": "karma start --single-run --browsers Chrome",
+    "test": "karma start --single-run --browsers PhantomJS",
     "mocha": "mocha test",
     "gulp": "gulp",
     "chai": "curl https://raw.githubusercontent.com/chaijs/chai/master/chai.js -o test/chai.js"
