@@ -1,4 +1,4 @@
-var expect = require('chai').expect
+var expect = chai.expect
 
 describe("Medida", function () {
   describe("Constructor de la clase Medida", function() {
